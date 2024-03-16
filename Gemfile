@@ -60,6 +60,8 @@ group :development do
   gem 'guard'
   gem 'guard-bundler', require: false
   gem 'guard-livereload', '~> 2.5.2', require: false
+  gem 'guard-minitest'
+  gem 'guard-rails', require: false
   gem 'web-console'
 
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
