@@ -117,7 +117,11 @@ GEM
       warden (~> 1.2.3)
     docile (1.4.0)
     drb (2.2.1)
+    em-websocket (0.5.3)
+      eventmachine (>= 0.12.9)
+      http_parser.rb (~> 0)
     erubi (1.12.0)
+    eventmachine (1.2.7)
     factory_bot (6.2.1)
       activesupport (>= 5.0.0)
     factory_bot_rails (6.2.0)
@@ -141,6 +145,12 @@ GEM
       guard (~> 2.2)
       guard-compat (~> 1.1)
     guard-compat (1.2.1)
+    guard-livereload (2.5.2)
+      em-websocket (~> 0.5)
+      guard (~> 2.8)
+      guard-compat (~> 1.0)
+      multi_json (~> 1.8)
+    http_parser.rb (0.8.0)
     i18n (1.14.4)
       concurrent-ruby (~> 1.0)
     importmap-rails (2.0.1)
@@ -188,6 +198,7 @@ GEM
     mini_mime (1.1.5)
     minitest (5.22.2)
     msgpack (1.7.2)
+    multi_json (1.15.0)
     mutex_m (0.2.0)
     nenv (0.3.0)
     net-imap (0.4.10)
@@ -366,6 +377,7 @@ DEPENDENCIES
   factory_bot_rails
   guard
   guard-bundler
+  guard-livereload (~> 2.5.2)
   importmap-rails
   jbuilder
   pg (~> 1.1)
